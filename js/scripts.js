@@ -32,7 +32,29 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Shrink the navbar 
     navbarShrink();
-
+	
+	// 우클릭 차단
+	document.addEventListener('contextmenu', function(event) {
+	  event.preventDefault(); 
+	});
+	document.addEventListener('keydown', function(event) {
+	  // F12 키 차단
+	  if (event.keyCode === 123) {
+	    event.preventDefault();
+	  }
+	  // Ctrl+Shift+I (개발자 도구) 차단
+	  if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+	    event.preventDefault();
+	  }
+	  // Ctrl+Shift+C (요소 검사) 차단
+	  if (event.ctrlKey && event.shiftKey && event.keyCode === 67) {
+	    event.preventDefault();
+	  }
+	  // Ctrl+U (소스 보기) 차단
+	  if (event.ctrlKey && event.keyCode === 85) {
+	    event.preventDefault();
+	  }
+	});
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
