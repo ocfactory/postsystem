@@ -322,7 +322,7 @@ window.addEventListener('DOMContentLoaded', event => {
 	});
 	
 	// 저장된 언어 불러오기
-	const savedLang = localStorage.getItem("language") || "en";
+	const savedLang = localStorage.getItem("language") || "kr";
 
 	setLanguage(savedLang);
 
