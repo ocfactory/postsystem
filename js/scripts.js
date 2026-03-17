@@ -155,7 +155,7 @@ window.addEventListener('DOMContentLoaded', event => {
 			solutions_t5: "SMS",
 			solutions_st5: "Sortation Management System",
 			solutions_t6: "Automated Systems",
-			solutions_st6: "Automation & Robotics",
+			solutions_st6: "Automation & Robotics (AGV, AMR, ASRS, etc.)",
 			
 			aboutus: "ABOUT US",
 			aboutus_desc1: "POST System: The Warmest Connection Between Technology and People",
@@ -214,7 +214,7 @@ window.addEventListener('DOMContentLoaded', event => {
 			solutions_t5: "SMS",
 			solutions_st5: "분류 관리 시스템",
 			solutions_t6: "자동화 시스템",
-			solutions_st6: "자동화 및 로봇",
+			solutions_st6: "자동화 및 로봇 (AGV, AMR, ASRS 등)",
 			
 			aboutus: "회사소개",
 			aboutus_desc1: "기술과 사람을 잇는 가장 따뜻한 연결, 포스트시스템",
