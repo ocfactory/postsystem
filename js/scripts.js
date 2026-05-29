@@ -124,12 +124,12 @@ window.addEventListener('DOMContentLoaded', event => {
             emailjs.send("service_t7ib4oh","template_fcuc9fe", params)
             .then(function(response){
 
-                alert("메일이 성공적으로 전송되었습니다.");
+                alert(languageData[email_success]);
                 contactForm.reset();
 
             }, function(error){
 
-                alert("메일 전송 실패");
+                alert(languageData[email_fail]);
 
             });
 
@@ -209,7 +209,10 @@ window.addEventListener('DOMContentLoaded', event => {
 			contactus_feedback_phone: "A phone number is required.",
 			contactus_message: "Your Message *",
 			contactus_feedback_message: "A message is required.",
-			contactus_sendmessage: "Send Message"
+			contactus_sendmessage: "Send Message",
+			
+			email_success: "The email has been sent successfully.",
+			email_fail: "[Error] Failed to send the email."
 		},
 
 		kr: {
@@ -268,7 +271,10 @@ window.addEventListener('DOMContentLoaded', event => {
 			contactus_feedback_phone: "전화번호는 필수 입력 사항입니다.",
 			contactus_message: "메시지 *",
 			contactus_feedback_message: "메시지는 필수 입력 사항입니다.",
-			contactus_sendmessage: "이메일 전송"
+			contactus_sendmessage: "이메일 전송",
+			
+			email_success: "메일이 성공적으로 전송되었습니다.",
+			email_fail: "[에러] 이메일 전송에 실패하였습니다."
 		}
 
 	};
