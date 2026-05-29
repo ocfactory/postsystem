@@ -124,12 +124,12 @@ window.addEventListener('DOMContentLoaded', event => {
             emailjs.send("service_t7ib4oh","template_fcuc9fe", params)
             .then(function(response){
 
-                alert(languageData[email_success]);
+                alert(languageData[savedLang][email_success]);
                 contactForm.reset();
 
             }, function(error){
 
-                alert(languageData[email_fail]);
+                alert(languageData[savedLang][email_fail]);
 
             });
 
