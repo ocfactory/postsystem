@@ -124,12 +124,12 @@ window.addEventListener('DOMContentLoaded', event => {
             emailjs.send("service_t7ib4oh","template_fcuc9fe", params)
             .then(function(response){
 
-                alert(languageData[savedLang][email_success]);
+                alert(languageData[savedLang].email_success);
                 contactForm.reset();
 
             }, function(error){
 
-                alert(languageData[savedLang][email_fail]);
+                alert(languageData[savedLang].email_fail);
 
             });
 
@@ -323,12 +323,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
 			setLanguage(lang);
 
+			savedLang = lang;
+
 		});
 
 	});
 	
 	// 저장된 언어 불러오기
-	const savedLang = localStorage.getItem("language") || "en";
+	let savedLang = localStorage.getItem("language") || "en";
 
 	setLanguage(savedLang);
 
